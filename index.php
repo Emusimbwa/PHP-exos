@@ -29,6 +29,6 @@ for($i=0; $i<count($tab_noms); $i++) {
 // 
 
 $notes = [10, 20, 13];
+$sum = array_sum($notes);
 $moyenne = count($notes);
-
-echo "sum($notes) = " . "La moyenne de l'élève est de " . (array_sum($notes) / $moyenne);
+echo "La moyenne de l'élève est de " . round(array_sum($notes) / $moyenne,2);
